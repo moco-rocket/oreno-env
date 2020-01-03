@@ -1,0 +1,38 @@
+{
+	// Python
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "python.pythonPath": "*Pythonの環境があるパス*",
+    
+    // marp
+    "markdown.marp.enableHtml": true,
+    "markdown.marp.themes": [
+        "./**/**.css"
+    ],
+    "markdown.marp.exportType": "html",
+
+    "git.enableSmartCommit": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "terminal.integrated.shell.windows": "*windowsのとき：右のやつがあるパス→*\\cmd.exe",
+
+    // latex workshop
+    "latex-workshop.latex.recipes": [
+        {
+          "name": "latexmk",
+          "tools": ["latexmk"]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": ["--synctex=1", "--interaction=nonstopmode", "%DOC%"]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.outDir": "%DIR%/Output",
+    // 自動保存
+    "files.autoSave": "afterDelay",
+    // autoSaveとの相性が悪いので保存時自動ビルドを無効化
+    "latex-workshop.latex.autoBuild.run": "never"
+}
